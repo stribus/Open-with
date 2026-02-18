@@ -9,11 +9,11 @@ fltmc >nul 2>&1 || (
     exit /b
 )
 
-:: Detect VS Code path (checks both default locations)
+:: Detect Antigravity executable path (checks common locations)
 set "agy_path="
 for %%d in (
-    "%ProgramFiles%\Antigravity\Antigravity.exe",
-    "%APPDATA%\Antigravity\Antigravity.exe",
+    "%ProgramFiles%\Antigravity\Antigravity.exe"
+    "%APPDATA%\Antigravity\Antigravity.exe"
     "%LOCALAPPDATA%\Programs\Antigravity\Antigravity.exe"
 ) do if exist "%%~d" set "agy_path=%%~d"
 
