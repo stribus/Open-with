@@ -1,4 +1,4 @@
-Open-with
+# Open with
 
 This repository contains Windows batch scripts that add "Open with ..." entries to the Windows Explorer context menu.
 
